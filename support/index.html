@@ -17,7 +17,8 @@
   </div></header>
   <main id="main">
     <h1>A little help with practice</h1>
-    <p class="lede">Find your learner, choose how to answer, and pick up a saved round on your device.</p>
+    <p class="lede">Find your learner, choose how to answer, and get help for your app version.</p>
+    <div class="notice"><p><strong>Current TestFlight build: 1.2 (4). Upcoming build: 1.2 (6).</strong> Build 6 is still being tested and is not yet available in TestFlight. Features marked “Upcoming build 6” below are not available in build 4. Check the version and build shown in TestFlight before following those instructions.</p></div>
 
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <p class="eyebrow">For parents and teachers</p>
@@ -37,24 +38,40 @@
     <h2 id="common-questions">Common questions</h2>
 
     <h2>Start with the right learner</h2>
-    <p>Complete the welcome flow on a fresh installation, or choose a learner from the full-screen profile selector. Add learner creates a separate profile. Guest is available for a quick round without saving learner history.</p>
-    <p>Use Profiles to edit a learner or manage an optional PIN. In Settings, “Ask who's practicing on launch” controls whether the selector appears the next time you open the app. On Home, use the profile button to switch learners.</p>
+    <p>In build 4, use Profiles to choose or edit a learner and manage an optional PIN, then return to Play. Guest is available for a quick round without saving learner history.</p>
+    <p><strong>Upcoming build 6:</strong> A welcome flow and full-screen learner selector will make choosing a profile easier. “Ask who's practicing on launch” in Settings will control whether the selector appears when the app opens. Home will include a profile button for switching learners.</p>
 
     <h2>Make practice yours</h2>
-    <p>Settings lets you choose the operations, number range and cards per round. Number keypad and Multiple choice both work with Find the answer or Find the missing number. These choices apply to the next new round; a saved round keeps the settings with which it started.</p>
+    <p>In build 4, Settings lets you choose operations, number range and cards per round. Number keypad and Multiple choice work with ordinary and missing-number equations.</p>
+    <p><strong>Upcoming build 6:</strong> Story problems, optional adaptive practice, hints and recommended practice will also be free. Adaptive practice will start off. Practice settings will apply to the next new round; a saved round will keep the settings with which it started.</p>
     <p>Use Playful or Standard answer sounds and preview each outcome. For narration, turn on Read questions aloud, then choose Automatic or an installed Apple voice and a reading speed. The voices available depend on what is installed on the device.</p>
 
-    <h2>Continue a saved round</h2>
-    <p>A named learner can save an unfinished round and continue from Home on the same device. Choose that learner first, including its PIN if one is set. Guest practice does not create a saved learner round.</p>
-    <div class="notice"><p><strong>Cross-device learning sync is not enabled in the current version.</strong> Profiles, history and saved rounds remain on each device. Restoring a Pro subscription on another device does not copy that learning data.</p></div>
+    <h2>Upcoming build 6: continue a saved round</h2>
+    <p>A named learner will be able to save an unfinished round and continue from Home on the same device. Choose that learner first, including its PIN if one is set. Guest practice will not create a saved learner round. Build 4 does not have this saved-round continuation control.</p>
+    <div class="notice"><p><strong>Cross-device learning sync is not enabled in build 4 or the current build 6 candidate.</strong> Profiles and history remain on each device, as will build 6’s saved rounds. Restoring a Pro subscription on another device does not copy that learning data.</p></div>
 
     <h2>Pro access and subscriptions</h2>
-    <p>Free practice includes local profiles and immediate round results. An active HartMath Pro subscription unlocks saved reporting and analytics. The app displays the subscription price and billing period supplied by Apple.</p>
-    <p>If you already have Pro, open the Pro area from Progress or Settings, complete the parent check, and choose Restore Purchases. Use the Apple Account that holds the subscription and allow time for Apple to verify it. If verification fails or no plans are available, keep the exact message for your support request.</p>
+    <p>Practice, local profiles and immediate round results are free. HartMath Pro is for saved reporting and analytics. Where subscription plans are available, the app displays the price and billing period supplied by Apple; build 4 may show that new subscriptions are not available yet.</p>
+    <p><strong>Upcoming build 6:</strong> Story problems, adaptive practice, hints and recommendations will remain free. Verified Pro will also allow optional BrightTurn pairing and sending when a compatible family server is configured.</p>
+    <p>If you already have Pro, open the Pro area from Reports (Progress on Apple TV) or Settings in build 4, or from Progress or Settings in build 6, complete the parent check, and choose Restore Purchases. Use the Apple Account that holds the subscription and allow time for Apple to verify it. If verification fails or no plans are available, keep the exact message for your support request.</p>
     <p>You can manage or cancel a subscription through <a href="https://support.apple.com/en-us/118428">Apple's subscription controls</a>. Deleting a profile or uninstalling the app does not cancel billing. <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard terms of use</a> apply to the app.</p>
 
+    <h2>Upcoming build 6: connect optional BrightTurn rewards</h2>
+    <p>The instructions in this section are for build 6 once it is available; build 4 has no BrightTurn control. The connection will require a saved HartMath learner, verified Pro access, and a compatible family-operated BrightTurn server. Free practice works without a connection. A parent sets the learner, protected reward target, minimum answered questions, reward time, daily limit and time zone in BrightTurn.</p>
+    <ol>
+      <li>Open the BrightTurn parent dashboard and create a private pairing code for the intended learner.</li>
+      <li>In HartMath, choose that saved learner, open Settings → BrightTurn, and complete the parent check.</li>
+      <li>Enter the full HTTPS server address without a page path, password or query, then enter the 24-character code. You can paste its grouped form with hyphens.</li>
+      <li>Choose Check pairing code. Read the learner label, server and reward rules, then choose Enable sending future rounds only if they are correct. Cancel pairing if they are not.</li>
+    </ol>
+    <p>Eligible rounds started after enabling on this device can be shared when finished. An unfinished round explicitly continued here can also qualify if sharing was already enabled on this device before that round originally started. Importing history alone does not share it, and rounds that began before enabling remain excluded. Learning-data sync is disabled in the current build 6 candidate; connecting BrightTurn does not move saved rounds between devices. The summary contains a session identifier, completion time, submitted-answer and correct-answer counts, and active practice duration. Showing an answer without submitting one does not count toward the answered-question target, and repeated guesses on the same card do not add extra answered cards.</p>
+    <p>The connection and waiting queue belong to this device and are not transferred by iCloud. Keep this app open and connected to attempt sending queued rounds; the connection and parent rule must still be valid. The status, Waiting to send count and receipt show progress; Try sending now retries when Pro is verified. Expired or unverified Pro pauses sending without stopping local practice. A received result is not a promise that time has been granted: the server applies the parent’s rules and daily limits. Offline results count against the day they are accepted, in the rule’s time zone. Results older than the server’s seven-day acceptance window cannot be delivered. HartMath does not independently verify learning activity.</p>
+    <p>If the connection storage cannot be opened, use Retry connection storage. If the server rejects an expired or revoked connection, disconnect and create a new pairing code. Do not post server credentials, pairing codes or a child’s label in public support.</p>
+    <p>To stop sharing, choose Disconnect and confirm. This remains available without Pro and removes unsent queued results from this device. It does not undo rewards already accepted by BrightTurn or remove server records. If the app could not reach the server to revoke the connection, revoke it in the BrightTurn dashboard too. This per-learner, per-device connection is separate from iCloud syncing.</p>
+
     <h2>Navigation and readability</h2>
-    <p>Home, Profiles, Progress and Settings are the main destinations. iPhone uses tabs. iPad provides a left sidebar when there is enough space and adapts when the window is smaller or text is larger. Apple TV uses a left-side menu; use the remote to move focus and Back or Done to leave a screen.</p>
+    <p>Build 4 uses Play, Profiles, Reports (Progress on Apple TV) and Settings. On Apple TV, these are at the top of the screen. Use the remote to move focus and Back or Done to leave a screen.</p>
+    <p><strong>Upcoming build 6:</strong> The main destinations will be Home, Profiles, Progress and Settings. iPhone will use tabs; iPad will provide a left sidebar when space allows, adapting for smaller windows and larger text. Apple TV will have a left-side menu.</p>
     <p>On Apple TV, Reveal answer asks for confirmation. Keep trying is selected first so you can cancel without revealing the answer. The app also adapts to supported larger text, reduced-motion and reduced-transparency settings.</p>
 
     <h2>Saved-data help</h2>
